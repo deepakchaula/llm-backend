@@ -43,6 +43,9 @@ This application provides an API for interacting with a Language Model (LLM) usi
 
    - Start the FastAPI server:
      ```bash
+     virtualenv --system-site-packages -p python3 ./venv
+      python3 -m venv env
+      source env/bin/activate
      uvicorn main:app --reload
      ```
 

@@ -129,7 +129,6 @@ python-decouple==3.8
 python-dotenv==1.0.1
 python-multipart==0.0.9
 pytz==2024.1
-pywin32==306
 PyYAML==6.0.1
 pyzmq==26.0.3
 ragas==0.1.8
