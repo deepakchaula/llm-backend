@@ -6,21 +6,21 @@ This application provides an API for interacting with a Language Model (LLM) usi
 
 ## Requirements
 
-Python >= 3.8
-FastAPI
-Pydantic
-Beanie
-MongoDB (using Docker)
-Docker
-OpenAI Python Client
+- Python >= 3.8
+- FastAPI
+- Pydantic
+- Beanie
+- MongoDB (using Docker)
+- Docker
+- OpenAI Python Client
 
 ## Setup Instructions
 
 1. **Clone the Repository**
 
    ```bash
-   git clone your_repository_link
-   cd your_repository_directory
+   git clone https://github.com/deepakchaula/llm-backend.git
+   cd llm-backend
 
 ## Setup Instructions
 
@@ -57,11 +57,11 @@ OpenAI Python Client
 
 ## API Usage
 
-POST /conversations: Create a new conversation.
-GET /conversations: Retrieve all conversations.
-GET /conversations/{id}: Retrieve a specific conversation with its history.
-PUT /conversations/{id}: Update conversation properties.
-DELETE /conversations/{id}: Delete a conversation.
+- POST /conversations: Create a new conversation.
+- GET /conversations: Retrieve all conversations.
+- GET /conversations/{id}: Retrieve a specific conversation with its history.
+- PUT /conversations/{id}: Update conversation properties.
+- DELETE /conversations/{id}: Delete a conversation.
 
 ### Creating a Conversation
 
