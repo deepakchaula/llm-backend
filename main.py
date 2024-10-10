@@ -41,7 +41,7 @@ client = OpenAI(
 async def app_init():
     # Initialize database connection
     client = AsyncIOMotorClient("mongodb://localhost:27017")
-    await init_beanie(database=client.db_name, document_models=[Conversation])
+    await init_beanie(database=client.llm_db, document_models=[Conversation])
 
 # Exception handlers
 @app.exception_handler(RequestValidationError)
