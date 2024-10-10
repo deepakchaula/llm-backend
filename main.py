@@ -245,7 +245,7 @@ async def create_prompt(
     conversation.messages.append(prompt)
 
     try:
-        response = await client.chat.completions.create(model="gpt-3.5-turbo", messages=[{"role": "user", "content": "Hello world"}])
+        response = await client.chat.completions.create(model="gpt-3.5-turbo", messages=[{"role": "user", "content": prompt.content}])
     except OpenAIError as e:
         logger.error(f"OpenAIError occurred: {e}")
         raise HTTPException(status_code=422, detail=str(e))
